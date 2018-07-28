@@ -1,0 +1,14 @@
+﻿@page "/counter"
+
+<h1>Counter</h1>
+
+<p>Current count: @State.Count</p>
+<p>The State is managed by Dependency Injection as a Scoped Service.</p>
+<button class="btn btn-primary" onclick="@IncrementCount">Click me</button>
+
+@functions {
+    void IncrementCount()
+    {
+        State.Count++;
+    }
+}
